@@ -1,0 +1,97 @@
+/* demo page whole css */
+.body_cont{
+  padding-right: 20px; 
+}
+.body_cont h1{
+  font-weight: 800;
+  font-family: "open-sans-bold";
+  font-size: 36px;
+}
+.body_cont h1> span{
+  font-size: 14px;
+  font-weight: 200;
+  font-family: "open-sans-regular";
+  vertical-align: middle;
+  padding: 15px 0;
+}
+.credit_details{
+  display: table;
+  width: 100%;
+}
+.credit_details.first{
+  padding: 150px 0 30px;
+}
+.credit_details.others{
+  padding: 70px 0 30px;
+  border-top: 2px solid #ccc;
+}
+.credit_details .credit_text{
+  display: table-cell;
+  width: 50%;
+  float: left;
+}
+.credit_details .credit_btn{
+  display: table-cell;
+  float: right;
+  width: 50%;
+
+}
+
+.martop{
+  margin-top: 30px;
+}
+.credit_details .credit_btn span {
+    color: #fff;
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 22px;
+    width: 240px;
+  padding: 10px 0 12px;
+    text-align: center;
+    float: right;
+    margin-top: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.fb{
+ color: white;
+ background-color: darkblue;
+ font-size: larger;
+ font-weight: 100;
+ cursor: pointer;
+ border-radius: 20px;
+ text-align: center;
+
+}
+.credit_details .credit_btn span.btnFind{
+   background-color: #FFC033;
+}
+.credit_details .credit_btn span.btnApply{
+   background-color: #9B9B9B;
+}
+/*modal css*/
+#myModal .close{
+  float: left;
+  padding: 5px 9px;
+
+}
+.mbody{
+  width: 60%;
+}
+.submit{
+    background-color: #FFC033;
+    font-size: 16px;
+    padding-right: 100px;
+    border-radius: 22px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    font-weight: 800;
+    width: 240 px;
+    padding: 10;
+    padding: 10px;
+}
+
+
+   

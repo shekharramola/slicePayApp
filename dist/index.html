@@ -1,0 +1,35 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Slice Pay</title>
+        <meta name="description" content="Slice pay app app.">
+        <meta name="keywords" content="Angular">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+        <!-- Needs images, font... therefore can not be part of main.css -->
+        <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+        <!-- end Needs images -->
+        
+            
+        <link rel="stylesheet" href="styles/main.css">
+
+    </head>
+    <body data-ng-app="app"
+          data-ng-controller="AppCtrl as appCtrl"
+          >
+    <header data-ng-include=" 'app/layout/views/header.html' " ></header>
+    <section class="bodySection" ng-view=""></section>
+   <footer data-ng-include= "'app/layout/views/footer.html'"></footer>
+
+        <script src="scripts/angular.js"></script>
+
+        <script src="scripts/lib.js"></script>
+
+        <script src="scripts/app.js"></script>
+
+    </body>
+</html>
+
+

@@ -1,0 +1,60 @@
+/*media queries*/
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  .navbar-toggle {
+      position: relative;
+      float: left;
+  }
+  .navbar-brand{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .user_list li.dropdown{
+    display: none;
+  }
+  .user_list li>img{
+    position: absolute;
+    right: 10px;
+    top: -40px;
+  }
+  .body_cont h1{
+    font-size: 26px;
+  }
+  .credit_details.first, .credit_details.others{
+    padding: 20px 0;
+  }
+  .credit_details .credit_text {
+      display: table;
+      width: 100%;
+      float: none;
+  }
+  .credit_text h3{
+    font-size: 21px;
+  }
+  .credit_text p{
+    font-size: 17px;
+  }
+  .credit_details .credit_btn {
+      display: table;
+      float: left;
+  }
+  .footer_nav li{
+    display: block;
+    padding: 10px 0;
+  }
+  .bottom_cont .cont1 .social_link li {
+      padding-right: 15px;
+      padding-left: 0;
+  }
+  .bottom_cont p span.pull-right{
+    float: none!important;
+    padding-bottom: 20px;
+  }
+  .payment_icons{
+    padding: 10px 0;
+  }
+  .payment_icons li {
+      padding-right: 12px;
+  }
+
+}

@@ -1,0 +1,62 @@
+/* header css */
+
+*{
+  margin: 0;
+  padding: 0;
+}
+@font-face{
+  font-family: "open-sans-regular";
+  src: url('/styles/fonts/open-sans/OpenSans-Regular.ttf');
+}
+@font-face{
+  font-family: "open-sans-bold";
+  src: url('/styles/fonts/open-sans/OpenSans-Bold.ttf');
+}
+@font-face{
+  font-family: "open-sans-light";
+  src: url('/styles/fonts/open-sans/OpenSans-Light.ttf');
+}
+
+.header_cont{
+  padding: 10px 0;
+}
+.header_cont .navbar-brand{
+  padding: 13px 0;
+}
+.header_cont .nav_list li a{
+  text-transform: uppercase;
+  color: #4a4a4a;
+  text-decoration: none;
+  outline: 0;
+  font-size: 14px;
+}
+.header_cont .nav_list li a:hover, .header_cont .nav_list li a:focus{
+  text-transform: uppercase;
+  color: #f5a623;
+  text-decoration: none;
+  outline: 0;
+  background-color: transparent;
+}
+.navbar-toggle{
+  background-color: #ccc;
+} 
+.navbar-toggle .icon-bar {
+  background-color:#fff;
+}
+.navbar{
+  margin-bottom: 0;
+}
+.user_list{
+  padding: 8px 0;
+}
+.user_list li>a{
+  color: #f5a623;
+  text-decoration: none;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.user_list li>ul>li>a{
+  color: #000;
+}
+/*header css end here*/
+

@@ -1,0 +1,134 @@
+
+    <div class="container" ng-controller="HomeCtrl as homeCtrl">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="row">
+            <div class="col-xs-12 col-sm-8 col-md-8">
+              <div class="body_cont">
+                <h1>
+                  Profile Details
+                  <span class="pull-right">HELP</span>
+                </h1>
+                <div class="credit_details first">
+                  <div class="credit_text">
+                    <h3>
+                      Are you eligible for credit?
+                    </h3>
+                    <p>Find out if you meet the basic criteria.</p>
+                  </div>
+                  <div class="credit_btn">
+                    <span class="btn btnFind">
+                      find out now
+                    </span>
+                  </div>
+                </div>
+                <div class="credit_details others">
+                  <div class="credit_text">
+                    <h3>
+                      Get the first taste with Silver Access!
+                    </h3>
+                    <p>Fid out if you meet the basic criteria.</p>
+                  </div>
+                  <div class="credit_btn">
+                    <span class="btn btnApply" data-toggle="modal" data-target="#myModal">
+                      Apply now
+                    </span>
+                  </div>
+                </div>
+                <div class="credit_details others">
+                  <div class="credit_text">
+                    <h3>
+                      Savour your credibility with Gold Privilege
+                    </h3>
+                    <p>Get upto Rs.20,000 Credit Limit.</p>
+                  </div>
+                  <div class="credit_btn">
+                    <span class="btn btnApply">
+                      Apply now
+                    </span>
+                  </div>
+                </div>
+                <div class="credit_details others">
+                  <div class="credit_text">
+                    <h3>
+                      Boost your Credit limit by upto Rs.10,000
+                    </h3>
+                    <p>This is an optional step</p>
+                  </div>
+                  <div class="credit_btn">
+                    <span class="btn btnApply">
+                      boost
+                    </span>
+                  </div>
+                </div>
+                <div class="credit_details others">
+                  <div class="credit_text">
+                    <h3>
+                      Get exclusive accessto the Platinum club
+                    </h3>
+                    <p>Get a whooping Rs.60,000 Credit Limit!</p>
+                  </div>
+                  <div class="credit_btn">
+                    <span class="btn btnApply">
+                      Apply now
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+
+   <div id="myModal" class="modal fade" role="dialog">
+   <div class="modal-dialog">
+      <div class="modal-content">
+         <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title"> Apply for Silver Access
+               <span class="pull-right">HELP</span>
+            </h4>
+         </div>
+         <div class="modal-body">
+            <div class="mbody">
+               <div ng-repeat = "question in homeCtrl.questions track by $index">
+                  <h3>{{question.name}}</h3>
+                  <div ng-repeat = "y in question.sub">
+                     <select class= "form-control martop" ng-model="formData.select[$index]"
+                        ng-options='number for number in y.ans'>
+                        <option value = "">{{y.name}}</option>
+                     </select>
+                  </div>
+               </div>
+               <div ng-repeat = "quest in homeCtrl.inputQuestions track by $index">
+                  <h3>{{quest.name}}</h3>
+                  <div ng-repeat = "y in quest.sub">
+                     <input type="text" class="form-control martop" name="{{y.name}}" ng-model="formData.input[$index]" placeholder="{{y.name}}">   
+                  </div>
+               </div>
+               <span ng-repeat = "up in homeCtrl.uploadQuestions track by $index">
+                  <h3>{{up.name}}</h3>
+                  <span ng-repeat = "z in up.sub">
+                  <input type="file" title="{{z.name}}" file-upload multiple id=file class="form-control martop" name="file"  placeholder="{{z.name}}"/>
+                  <label>{{z.name}}</label>
+                  </span>
+               </span>
+               <div>
+                  <h3>Connect your facebook account</h3>
+                  <div>
+                     <a  href="https://www.facebook.com/">     <span class="form-control martop fb" name="fb" >Login your facebook account
+                     </span>
+                     </a>
+                  </div>
+               </div>
+               <br>
+            </div>
+            <div class="modal-footer">
+               <span class="submit pull-center" data-dismiss="modal" ng-click="homeCtrl.submit(formData)">Apply with these details</span>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+</div>
